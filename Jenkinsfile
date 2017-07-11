@@ -1,4 +1,4 @@
-{% raw %}
+
 @Library("sharedLibraries") _
 standardPipeline {
     projectName = "Project1"
