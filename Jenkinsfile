@@ -1,22 +1,7 @@
-pipeline {
-    agent any
-    checkout scm
-
-    stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-    }
+{% raw %}
+@Library("sharedLibraries") _
+standardPipeline {
+    projectName = "Project1"
+    serverDomain = "Project1 Server Domain
 }
+```
